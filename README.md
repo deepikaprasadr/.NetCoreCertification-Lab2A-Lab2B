@@ -1,5 +1,4 @@
 .Net8 Lab 2 Configuring Routing and Navigation
- Level : Beginner
  Mentor: Shailendra Chauhan
  Type : GuidedLab
  Points : 10
