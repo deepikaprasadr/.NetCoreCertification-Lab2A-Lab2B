@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "razorsyntaxpage";
+}
+
+<h1>razorsyntaxpage</h1>
+
+@{string name="Deepika";}
+<p>My name is @name</p>
+
+
+@for(int i = 1; i < 10; i++)
+{
+    if(i%2==0)
+    {
+        int j = i + 1;
+        <p>@i is even</p>
+    }
+    else
+    {
+        <p>@i is odd</p>
+    }
+}
+<h2>Most Popular Course</h2>
+
+
+
+

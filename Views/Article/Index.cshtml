@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<h1>ViewComponent Demo</h1>
+<div>
+<p>
+<ul>
+The view component class
+A view component class can be created by any of the following:
+<li>
+Deriving from ViewComponent
+Decorating a class with the [ViewComponent] attribute, or deriving from a class with the [ViewComponent] attribute
+Creating a class where the name ends with the suffix ViewComponent
+Like controllers, view components must be public, non-nested, and non-abstract classes. The view component name is the class name with the ViewComponent suffix removed. It can also be explicitly specified using the Name property.
+            </li>
+            <li>
+                A view component class:
+
+Supports constructor dependency injection
+Doesn't take part in the controller lifecycle, therefore filters can't be used in a view component
+To prevent a class that has a case-insensitive ViewComponent suffix from being treated as a view component, decorate the class with the [NonViewComponent] attribute:
+            </li>
+        </ul>
+    </p>
+</div>
+
+@await Component.InvokeAsync("Comment", new{id=3})
