@@ -29,3 +29,27 @@ Create a separate layout for each module.
 Add the Logout link and upon clicking redirect to the logout page and show the message: “You have been logout successfully”
 Note: Don’t use any database, just pass username and password and do navigation.
 
+
+**Lab2 B**
+
+ Creating Custom Helpers 
+ Level : Beginner 
+ Type : GuidedLab
+ Points : 10
+ Duration : 01:00:00
+ Lab Problem Lab Solution
+Lab Details
+Description
+In this lab, you will be learning how to create and implement the Custom Tag helpers into your ASP.NET Core applications. By the end of the lab, you'll have the skills to the Custom Tag helper and to use them in the application.
+Lab Objective
+*Upon completion of this lab, you will be able to:
+*Create the Custom Tag helper in your ASP.NET Core application
+*How to use Custom tag helper in the application.
+Prerequisites
+You should be familiar with:
+Basic Understanding of Tag helpers in ASP.NET Core
+Lab Requirements
+ #Create a Login page
+ #Create a custom helper for making a link highlight by passing a CSS class active. Make a tag helper with the name asp-active-link.
+ #Create a custom tag for creating a command button with submitting behavior.
+
