@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Lab2RoutingNavigationConfigure.Attributes;
+using System.ComponentModel.DataAnnotations;
 
 namespace Lab2RoutingNavigationConfigure.Models
 {
@@ -18,7 +19,8 @@ namespace Lab2RoutingNavigationConfigure.Models
         [RegularExpression(@"^[6789]\d{9}$",ErrorMessage ="Invalid Contact Number")]    
         public int? Phone { get; set; }
 
-        [Required(ErrorMessage ="Accept Terms and Conditions")]
+        //  [Required(ErrorMessage ="Accept Terms and Conditions")]
+        [ValidateCheckBox(ErrorMessage ="Accept Terms and Conditions")]
         public bool Terms { get; set; }
     }
 }

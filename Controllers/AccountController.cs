@@ -40,7 +40,10 @@ namespace Lab2RoutingNavigationConfigure.Controllers
             return View();
            
         }
-           
+           public IActionResult Signup()
+        {
+            return View();
+        }
 
             public void razorsyntaxpage()
         {

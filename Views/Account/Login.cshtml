@@ -9,7 +9,7 @@
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label asp-for="Username">Username:</label>
-        <input type="text" class="form-control" asp-for="Username" name="Username"/>
+        <input type="text" class="form-control" asp-for="Username" name="Username" />
         <span asp-validation-for="Username" class="text-danger"></span>
 
     </div>
@@ -20,7 +20,18 @@
     </div>
          
     <div>
-        <input type="submit" value="Login" class="btn btn-primary"/>
+        @* commenting for 2b task command-button *@
+        @* <input type="submit" value="Login" class="btn btn-primary"/> *@
+        <command-button class="btn btn-primary" value="Login">Login</command-button>
+        <command-button class="btn btn-primary" value="Cancel">Cancel</command-button>
+
         @Html.ActionLink("Goto AdminController", "Index","Home",new{area="Admin"},null)
     </div>
 </form>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -4,24 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Lab2RoutingNavigationConfigure</title>
-    <link rel="stylesheet" href="~/Lab2RoutingNavigationConfigure.styles.css" asp-append-version="true" />
+
+    @* commented for 2b *@
+    @* <link rel="stylesheet" href="~/Lab2RoutingNavigationConfigure.styles.css" asp-append-version="true" /> *@ 
+    
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    @* 2b *@
+    <style>
+        .active{
+            color:red !important;
+        }
+
+        /*   a:active {
+                    color: red;
+                    background-color: yellow;
+                    text-decoration: underline;
+                } */
+    </style>
+   
+   
 </head>
 <body>
-  <partial name="_Header"></partial>
+  <partial name="_Header"/>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-   <partial name="_Footer"></partial>
+   <partial name="_Footer"/>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-   @*  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script> *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+ 
