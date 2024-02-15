@@ -18,7 +18,7 @@ namespace Lab2RoutingNavigationConfigure.Attributes
         public override void Process(TagHelperContext context, TagHelperOutput output) //override virtual method Process
         {
 
-            
+              
             var currentController = ViewContext.RouteData.Values["Controller"].ToString();
             var currentAction = ViewContext.RouteData.Values["Action"].ToString();
             //<param name="allAttributes">Every attribute associated with the current HTML element.</param>
