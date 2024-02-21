@@ -6,6 +6,12 @@ namespace Lab2RoutingNavigationConfigure.Areas.User.Controllers
     {
         public IActionResult Index()
         {
+            string loginsuccess=(string)TempData.Peek("loginsuccess");
+            ViewBag.loginmsg = loginsuccess;
+
+
+            //TempData["loginsuccess"] = welcomemsg;
+
             return View();
         }
 

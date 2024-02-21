@@ -3,7 +3,25 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<style>
+   /*  .myDiv{
+        color:red;
+    } */
+    #myDiv {
+        color: red;
+    } 
+
+    .container{
+        text-align:center;
+    }
+    .centeredDiv{
+        display:inline-block;
+    }
+</style>
+<h1>Login</h1>    
+<h4> @ViewBag.welcomemsgvb </h4>
+
+
 
 <form method="post" asp-controller="Account" asp-action="Login">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -11,14 +29,13 @@
         <label asp-for="Username">Username:</label>
         <input type="text" class="form-control" asp-for="Username" name="Username" />
         <span asp-validation-for="Username" class="text-danger"></span>
-
     </div>
     <div class="form-group">
         <label asp-for="Password">Password:</label>
         <input type="password" class="form-control" asp-for="Password" name="Password">
         <span asp-validation-for="Password" class="text-danger"></span>
     </div>
-         
+
     <div>
         @* commenting for 2b task command-button *@
         @* <input type="submit" value="Login" class="btn btn-primary"/> *@
@@ -29,6 +46,9 @@
     </div>
 </form>
 
+<div  id="myDiv" @*class="myDiv"*@ class="container">
+      @ViewData["InvalidUserMsg"]
+</div> 
 
 @section Scripts{
     @{

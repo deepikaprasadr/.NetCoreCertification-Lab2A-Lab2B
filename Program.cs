@@ -1,4 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
+//Add Session
+builder.Services.AddSession(); // 2c lab
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -17,8 +19,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+//Use Session
+app.UseSession();// 2c lab
 
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
             name: "areas",
