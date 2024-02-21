@@ -1,4 +1,8 @@
-﻿
+﻿<style>
+    .myUserWelcomeText{
+        color:blue;
+    }
+</style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -21,6 +25,10 @@
                     <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                 </li>
             </ul>
+        </div>
+
+        <div class="myUserWelcomeText">
+            <h5>@ViewBag.loginmsg </h5>
         </div>
     </div>
 </nav>
