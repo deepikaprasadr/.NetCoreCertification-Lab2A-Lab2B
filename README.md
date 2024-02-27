@@ -29,3 +29,32 @@ Create a separate layout for each module.
 Add the Logout link and upon clicking redirect to the logout page and show the message: “You have been logout successfully”
 Note: Don’t use any database, just pass username and password and do navigation.
 
+**Lab 3: Creating User Registration Form with Validations**
+ 
+ Type : GuidedLab
+ Points : 10
+ Duration : 01:30:00
+ Lab Problem  
+Lab Details
+**Description**
+In this lab, you will be learning how to create a Login page and implement form validation into your ASP.NET Core applications. By the end of the lab, you'll have the skills to Form validations and use them in the application.
+
+**Lab Objective**
+Upon completion of this lab, you will be able to:
+Create the SignUp page with Form validations in your ASP.NET Core application
+How to use Custom validation attributes in the application
+
+**Prerequisites**
+You should be familiar with:
+Basic Understanding of ASP.NET Core
+
+**Lab Requirements**
+Create a User Registration form with the following fields and validations.
+Name: Required
+Email: Required, Email
+Password: Required with (1 Uppercase, 1 Number, 1 Special Char, and 1 Lowercase Char), Min Length (8 Chars)
+ConfirmPassword: Required, Compare
+Contact: Regular Expression
+Gender: Required (Radio Button)
+Accept Terms: Required (Check Box)
+Note: Use Bootstrap for UI and Error Messages.
